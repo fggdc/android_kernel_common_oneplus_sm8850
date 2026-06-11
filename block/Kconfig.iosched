@@ -9,7 +9,7 @@ config MQ_IOSCHED_DEADLINE
 
 config MQ_IOSCHED_KYBER
 	tristate "Kyber I/O scheduler"
-	default y
+	default m
 	help
 	  The Kyber I/O scheduler is a low-overhead scheduler suitable for
 	  multiqueue and other fast devices. Given target latencies for reads and
@@ -18,7 +18,7 @@ config MQ_IOSCHED_KYBER
 
 config MQ_IOSCHED_ADIOS
 	tristate "Adaptive Deadline I/O scheduler"
-	default y
+	default n
 	help
 	  The Adaptive Deadline I/O Scheduler (ADIOS) is a multi-queue I/O
 	  scheduler with learning-based adaptive latency control.
